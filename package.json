@@ -1,0 +1,22 @@
+{
+  "name": "audio-nw",
+  "version": "1.0.0",
+  "description": "Component to facilitate playing audio on Node-Webkit apps",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Prismatik/audio-nw.git"
+  },
+  "author": "david@banham.id.au",
+  "license": "Proprietary",
+  "private": true,
+  "bugs": {
+    "url": "https://github.com/Prismatik/audio-nw/issues"
+  },
+  "homepage": "https://github.com/Prismatik/audio-nw",
+  "dependencies": {
+  }
+}
