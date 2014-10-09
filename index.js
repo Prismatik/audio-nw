@@ -1,12 +1,13 @@
-var AudioAdapter = function(){
-	return this;
+var AudioAdapter = function(audio){
+  this.Audio = audio || Audio;
+  return this;
 }
 
 AudioAdapter.prototype.play = function(file, callback) {
-	
-	callback = callback || function() {};
 
-  var player = new Audio();
+  callback = callback || function() {};
+
+  var player = new this.Audio();
 
   player.addEventListener('ended', function() {
     callback();
@@ -22,4 +23,6 @@ AudioAdapter.prototype.play = function(file, callback) {
 
 };
 
-module.exports = new AudioAdapter();
+module.exports = function(audio) {
+  return new AudioAdapter(audio);
+};
